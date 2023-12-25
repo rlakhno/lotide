@@ -8,11 +8,7 @@ const assertEqual = function(actual, expected) {
 };
 
 const tail = function(array) {
-  const newArray = [];
-  for (let i = 1; i < array.length; i ++) {
-    newArray.push(array[i]);
-  }
-  return newArray;
+  return array.slice(1);
 };
 
 const words = ["Yo Yo", "Lighthouse", "Labs"];
@@ -24,3 +20,5 @@ const result = tail(["Hello", "Lighthouse", "Labs"]);
 assertEqual(result.length, 2); // ensure we get back two elements
 assertEqual(result[0], "Lighthouse"); // ensure first element is "Lighthouse"
 assertEqual(result[1], "Labs"); // ensure second element is "Labs"
+assertEqual(tail(["test"]).length, 0); // tail of array with one element only should be empty
+assertEqual(tail([]).length, 0); // tail of an empty array should also be empty
