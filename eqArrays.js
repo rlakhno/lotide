@@ -15,6 +15,7 @@ function eqArrays(actualArray, expectedArray) {
   for (let i = 0; i < actualArray.length; i ++) {
     if (actualArray[i] !== expectedArray[i]) {
       return false;
+      break;
     }
   }
   return true;
