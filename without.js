@@ -21,14 +21,28 @@ function assertArraysEqual(array1, array2) {
   }
 }
 
-function without(source, itemsToRemove) {
-  // Use filter to create a new array with elements not present in itemsToRemove
-  let tempArray = source.filter(function(item) {
-    return !itemsToRemove.includes(item);
-  });
-  return tempArray;
-}
+function without(arrayA, arrayB) {
+  let tempArray = [];
+ 
+  for (let i = 0; i < arrayA.length; i ++) {
+    let temp = false;
+    for (let j = 0; j < arrayB.length; j ++) {
+      if (arrayA[i] === arrayB[j]) {
+        temp = false;
+        break;
+      }
+      if (arrayA[i] !== arrayB[j]) {
+        temp = true;
+      }
+        
+    }
+    if (temp) {
+      tempArray.push(arrayA[i]);
+    }
 
+  }
+  return  tempArray;
+}
 // Testing function - without
 const arrayOfLetters = ['a', 'b', 'c', 'd', 'e', 'f'];
 const arrayOfWithoutLetters = ['a', 'b', 'f'];
@@ -39,7 +53,7 @@ console.log(without([1, 2, 3], [1])); // => [2, 3]
 console.log(without([1, 2, 3], [1, 2])); // => [3]
 console.log(without(["1", "2", "3"], [1, 2, "3"])); // => ["1", "2"]
 console.log(without(numbers, numbersWithout)); // => [4,5,6,7]
-console.log(without(arrayOfLetters, arrayOfWithoutLetters));//=>['c', 'd', 'e'];
+console.log(without(arrayOfLetters, arrayOfWithoutLetters));//=>['d', 'e', 'f']
 
 const words = ["hello", "world", "lighthouse"];
 console.log(without(words, ["lighthouse"])); // no need to capture return value for this test case
