@@ -27,8 +27,7 @@ function flatten(array) {
   for (let items of array) {
     if (!Array.isArray(items)) {
       tempArray.push(items);
-    }
-    if (Array.isArray(items)) {
+    }else {
       for (let item of items) {
         tempArray.push(item);
       }
