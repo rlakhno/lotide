@@ -4,7 +4,7 @@ function eqArrays(actualArray, expectedArray) {
     return false;
   }
 
-  for (let i = 0; i < actualArray.length; i ++) {
+  for (let i = 0; i < actualArray.length; i++) {
     if (actualArray[i] !== expectedArray[i]) {
       return false;
     }
@@ -20,34 +20,29 @@ function assertArraysEqual(array1, array2) {
     console.log(`🛑 🛑 🛑 Assertion Failed: ${array1}  and ${array2} are NOT equal `);
   }
 }
-
+// function without takes two arrays
 function without(arrayA, arrayB) {
   let tempArray = [];
- 
-  for (let i = 0; i < arrayA.length; i ++) {
-    let temp = false;
-    for (let j = 0; j < arrayB.length; j ++) {
+
+  for (let i = 0; i < arrayA.length; i++) {
+    let temp = true;
+    for (let j = 0; j < arrayB.length; j++) {
       if (arrayA[i] === arrayB[j]) {
         temp = false;
         break;
       }
-      if (arrayA[i] !== arrayB[j]) {
-        temp = true;
-      }
-        
     }
     if (temp) {
       tempArray.push(arrayA[i]);
     }
-
   }
-  return  tempArray;
+  return tempArray;
 }
 // Testing function - without
 const arrayOfLetters = ['a', 'b', 'c', 'd', 'e', 'f'];
 const arrayOfWithoutLetters = ['a', 'b', 'f'];
-const numbers = [1,2,3,4,5,6,7];
-const numbersWithout = [1,2,3];
+const numbers = [1, 2, 3, 4, 5, 6, 7];
+const numbersWithout = [1, 2, 3];
 
 console.log(without([1, 2, 3], [1])); // => [2, 3]
 console.log(without([1, 2, 3], [1, 2])); // => [3]
