@@ -23,18 +23,19 @@ function eqArrays(actualArray, expectedArray) {
 
 // ACTUAL FUNCTION
 const middle = function(array) {
-  let tempArray = [];
+  let emptyArray = [];
   if (array.length < 3) {
+    return emptyArray;
   } else if (array.length % 2 === 0) {
     for (let i = array.length / 2 - 1; i <= array.length / 2; i++) {
-      tempArray.push(array[i]);
+      emptyArray.push(array[i]);
     }
   } else {
     let mid = Math.floor(array.length / 2);
-    tempArray.push(array[mid]);
+    emptyArray.push(array[mid]);
   }
 
-  return tempArray;
+  return emptyArray;
 };
 
 // TEST CODE
