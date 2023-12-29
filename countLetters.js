@@ -22,6 +22,9 @@ const countLetters = function(inputString) {
 };
 
 
-console.log(countLetters("LHL Home good world"));
-assertEqual(countLetters("LHL Home good world"), { L: 2, H: 2, o: 4, m: 1, e: 1, g: 1, d: 2, w: 1, r: 1, l: 1  });
-
+console.log(countLetters("LHL Home good world")); // { L: 2, H: 2, o: 4, m: 1, e: 1, g: 1, d: 2, w: 1, r: 1, l: 1 }
+const result = countLetters("LHL Home good world");
+assertEqual(result["L"], 2); // => Assertion Passed
+assertEqual(result["H"], 2); // => Assertion Passed
+assertEqual(result["g"], 1); // => Assertion Passed
+assertEqual(result["l"], 1); // => Assertion Passed
