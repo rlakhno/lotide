@@ -37,10 +37,7 @@ const assertObjectsEqual = function(actual, expected) {
       console.log(failedMessage);
       return;
     }
-    // console.log("item: " + valueActual, valueExpected);
   }
-  // console.log("actual: " + Object.values(actual))
-  
   console.log(passedMessage);
 };
 
