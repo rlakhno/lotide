@@ -4,9 +4,9 @@ const middle = function(array) {
   if (array.length < 3) {
     return emptyArray;
   } else if (array.length % 2 === 0) {
-    for (let i = array.length / 2 - 1; i <= array.length / 2; i++) {
-      emptyArray.push(array[i]);
-    }
+    emptyArray.push(array[array.length / 2 - 1]);
+    emptyArray.push(array[array.length / 2]);
+
   } else {
     let mid = Math.floor(array.length / 2);
     emptyArray.push(array[mid]);
