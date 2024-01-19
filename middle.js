@@ -1,26 +1,3 @@
-// FUNCTION IMPLEMENTATION
-// Prints a message if Assertion Passed or Failed
-function assertArraysEqual(array1, array2) {
-  if (eqArrays(array1, array2)) {
-    console.log(`✅ ✅ ✅ Assertion Passed: ${array1}  and ${array2} are equal `);
-  } else {
-    console.log(`🛑 🛑 🛑 Assertion Failed: ${array1}  and ${array2} are NOT equal `);
-  }
-}
-// returns TRUE or FALSE
-function eqArrays(actualArray, expectedArray) {
-  if (actualArray.length !== expectedArray.length) {
-    return false;
-  }
-
-  for (let i = 0; i < actualArray.length; i++) {
-    if (actualArray[i] !== expectedArray[i]) {
-      return false;
-    }
-  }
-  return true;
-}
-
 // ACTUAL FUNCTION
 const middle = function(array) {
   let emptyArray = [];
@@ -38,17 +15,4 @@ const middle = function(array) {
   return emptyArray;
 };
 
-// TEST CODE
-console.log(middle([1, 2, 3, 4])); // [2,3]
-console.log(middle([1, 2, 3, 4, 5, 6])); // => [3, 4]
-console.log(middle([1, 2, 3])); // => [2]
-console.log(middle([1, 2, 3, 4, 5])); // => [3]
-console.log(middle([1])); // => []
-console.log(middle([1, 2])); // => []
-
-console.log(assertArraysEqual(middle([1, 2, 3, 4]), [2, 3]));  //Assertion Passed
-console.log(assertArraysEqual(middle([1, 2, 3, 4, 5, 6]), [3, 4])); //Assertion Passed
-console.log(assertArraysEqual(middle([1, 2, 3]), [2])); //Assertion Passed
-console.log(eqArrays(middle([1, 2, 3, 4, 5]), [3])); // true
-console.log(eqArrays(middle([1]), [])); // => true
-console.log(eqArrays(middle([1, 2]), [])); // => true
+module.exports = middle;
