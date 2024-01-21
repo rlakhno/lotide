@@ -41,18 +41,20 @@ const assertObjectsEqual = function(actual, expected) {
   console.log(passedMessage);
 };
 
-// Tests
-const actualObj = { colors: "blue", size: "medium" };
-const expectedObj1 = { size: "medium", colors: "blue" };
-const expectedObj2 = { size: "medium", colors: "red"};
-const expectedObj3 = { size: "medium", colors: "red", weight: "10"};
-assertObjectsEqual(actualObj, expectedObj1); // => Assertion Passed
-assertObjectsEqual(actualObj, expectedObj2);  // => Assertion Failed
-console.log(assertObjectsEqual(actualObj, expectedObj3));  // => Assertion Failed
+module.exports = assertObjectsEqual;
 
-const actualObject = { colors: ["red", "blue"], size: "medium" };
-const expectedObject = { size: "medium", colors: ["red", "blue"] };
-const expectedObject1 = { size: "medium", colors: ["red", "blue"], weight: [3] };
-assertObjectsEqual(actualObject, expectedObject);  // => Assertion Passed
-assertObjectsEqual(actualObject, expectedObject1);  // => Assertion Failed
+// // Tests
+// const actualObj = { colors: "blue", size: "medium" };
+// const expectedObj1 = { size: "medium", colors: "blue" };
+// const expectedObj2 = { size: "medium", colors: "red"};
+// const expectedObj3 = { size: "medium", colors: "red", weight: "10"};
+// assertObjectsEqual(actualObj, expectedObj1); // => Assertion Passed
+// assertObjectsEqual(actualObj, expectedObj2);  // => Assertion Failed
+// console.log(assertObjectsEqual(actualObj, expectedObj3));  // => Assertion Failed
+
+// const actualObject = { colors: ["red", "blue"], size: "medium" };
+// const expectedObject = { size: "medium", colors: ["red", "blue"] };
+// const expectedObject1 = { size: "medium", colors: ["red", "blue"], weight: [3] };
+// assertObjectsEqual(actualObject, expectedObject);  // => Assertion Passed
+// assertObjectsEqual(actualObject, expectedObject1);  // => Assertion Failed
 

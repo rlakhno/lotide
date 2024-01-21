@@ -35,14 +35,16 @@ const letterPositions = function(sentence) {
   return results;
 };
 
-//Test
-const word = "hel lo";
-console.log(letterPositions(word).o); // => [ 5 ]
-console.log(letterPositions('h ello').l); // => [ 3, 4 ]
-console.log(letterPositions('lighthouse in'));
-// eqArrays() function
-console.log(eqArrays(letterPositions('lighthouse in the house').i, [1, 11])); // true
-console.log(eqArrays(letterPositions('lighthouse in the house').e, [ 9, 16, 22 ])); // true
-// assertEqual function
-assertArraysEqual(letterPositions('lighthouse in').h, [ 3, 5 ]); // Assertion Passed
-assertArraysEqual(letterPositions('lighthouse in').n, [ 12 ]); // Assertion Passed
+module.exports = letterPositions;
+
+// //Test
+// const word = "hel lo";
+// console.log(letterPositions(word).o); // => [ 5 ]
+// console.log(letterPositions('h ello').l); // => [ 3, 4 ]
+// console.log(letterPositions('lighthouse in'));
+// // eqArrays() function
+// console.log(eqArrays(letterPositions('lighthouse in the house').i, [1, 11])); // true
+// console.log(eqArrays(letterPositions('lighthouse in the house').e, [ 9, 16, 22 ])); // true
+// // assertEqual function
+// assertArraysEqual(letterPositions('lighthouse in').h, [ 3, 5 ]); // Assertion Passed
+// assertArraysEqual(letterPositions('lighthouse in').n, [ 12 ]); // Assertion Passed

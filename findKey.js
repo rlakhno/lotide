@@ -25,10 +25,11 @@ const object = {
   "Akelarre":  { stars: 3 }
 };
 
+module.exports = findKey;
 
-// TEST CODE
-assertEqual(findKey(object, x => x.stars === 2), "noma"); //=> Assertion Passed
-assertEqual(findKey(object, x => x.stars > 2), "Akaleri"); //=> Assertion Passed
-assertEqual(findKey(object, x => x.stars !== 2), "Blue Hill"); //=> Assertion Passed
-assertEqual(findKey(object, x => x.stars > 3), undefined); //=> Assertion Passed
+// // TEST CODE
+// assertEqual(findKey(object, x => x.stars === 2), "noma"); //=> Assertion Passed
+// assertEqual(findKey(object, x => x.stars > 2), "Akaleri"); //=> Assertion Passed
+// assertEqual(findKey(object, x => x.stars !== 2), "Blue Hill"); //=> Assertion Passed
+// assertEqual(findKey(object, x => x.stars > 3), undefined); //=> Assertion Passed
 

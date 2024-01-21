@@ -36,10 +36,13 @@ function flatten(array) {
   return tempArray;
 }
 
-// Testing the result
-console.log(assertArraysEqual(flatten([1, 2, [3, 4], 5, [6]]), [1, 2, 3, 4, 5, 6])); //Assertion Passed: 1,2,3,4,5,6  and 1,2,3,4,5,6 are equal
-console.log(eqArrays(flatten(['q', 's', ['d', 'e'], 6, ['t']]), ['q', 's', 'd', 'e', 6, 't'])); // =>  true
-console.log(flatten(['q', 's', ['d', 'e'], NaN, ['t']])); // => [ 'q', 's', 'd', 'e', NaN, 't' ]
-console.log(assertArraysEqual(flatten(['q', 's', ['d', 'e'], ['t']]), ['q', 's', 'd', 'e', 't']));
-console.log(flatten([1, 2, [3, 4], 5, [6]])); // => [1, 2, 3, 4, 5, 6]
-console.log(eqArrays(flatten([1, 2, [3, 4], 5, [6]]), [1, 2, 3, 4, 5, 6]));
+
+module.exports = flatten;
+
+// // Testing the result
+// console.log(assertArraysEqual(flatten([1, 2, [3, 4], 5, [6]]), [1, 2, 3, 4, 5, 6])); //Assertion Passed: 1,2,3,4,5,6  and 1,2,3,4,5,6 are equal
+// console.log(eqArrays(flatten(['q', 's', ['d', 'e'], 6, ['t']]), ['q', 's', 'd', 'e', 6, 't'])); // =>  true
+// console.log(flatten(['q', 's', ['d', 'e'], NaN, ['t']])); // => [ 'q', 's', 'd', 'e', NaN, 't' ]
+// console.log(assertArraysEqual(flatten(['q', 's', ['d', 'e'], ['t']]), ['q', 's', 'd', 'e', 't']));
+// console.log(flatten([1, 2, [3, 4], 5, [6]])); // => [1, 2, 3, 4, 5, 6]
+// console.log(eqArrays(flatten([1, 2, [3, 4], 5, [6]]), [1, 2, 3, 4, 5, 6]));
