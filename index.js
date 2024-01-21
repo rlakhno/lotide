@@ -5,7 +5,6 @@ const middle = require('./middle');
 const assertEqual   = require('./assertEqual');
 const assertArraysEqual   = require('./assertArraysEqual');
 const eqArrays = require('./eqArrays');
-const map   = require('./map');
 const flatten   = require('./flatten');
 const without = require('./without');
 const assertObjectsEqual   = require('./assertObjectsEqual');
@@ -30,7 +29,6 @@ module.exports = {
   head:   head,
   tail:   tail,
   middle: middle,
-  map:   map,
   flatten:   flatten,
   without: without,
   assertEqual: assertEqual,
