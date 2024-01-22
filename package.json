@@ -1,8 +1,8 @@
 {
-  "name": "lotide",
+  "name": "@rouslan77/lotide",
   "version": "1.0.0",
-  "description": "",
-  "main": "assertArraysEqual.js",
+  "description": "package for Ligthhouse Labs Lotide project",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/rlakhno/lotide.git"
   },
-  "author": "",
+  "author": "Rousla Lakhno @rouslan77",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/rlakhno/lotide/issues"
