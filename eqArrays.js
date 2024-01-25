@@ -1,7 +1,5 @@
-// FUNCTION IMPLEMENTATION
 
-
-function eqArrays(actualArray, expectedArray) {
+const eqArrays = function(actualArray, expectedArray) {
   if (actualArray.length !== expectedArray.length) {
     return false;
   }
@@ -12,7 +10,7 @@ function eqArrays(actualArray, expectedArray) {
     }
   }
   return true;
-}
+};
 
 module.exports = eqArrays;
 

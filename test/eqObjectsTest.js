@@ -30,7 +30,7 @@ describe("# eqObjects", () => {
   });
 
   it('returns false for result multiColorShirtObject, longSleeveMultiColorShirtObject', () => {
-    assert.strictEqual(eqObjects(shirtObject, longSleevetestObjectShirtObject), false);
+    assert.strictEqual(eqObjects(testObject, longSleeveShirtObject), false);
   });
 
 });

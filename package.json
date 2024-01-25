@@ -1,6 +1,6 @@
 {
   "name": "@rouslan77/lotide",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "package for Ligthhouse Labs Lotide project",
   "main": "index.js",
   "directories": {

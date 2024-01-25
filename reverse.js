@@ -19,14 +19,14 @@ let slicedArgs = args.slice(2);//removing first 2 elements from args
 
 //revrsing elements of array
 const revItem = function(item) {
-  return(item.split("").reverse().join(""));
-}
+  return (item.split("").reverse().join(""));
+};
 //iterating through array
 const reverse = function(array) {
   // let newString = "";
-  for(let items of array){
+  for (let items of array) {
     console.log(revItem(items));
   }
-}
+};
 //printing reversed array
 reverse(slicedArgs);
