@@ -17,7 +17,6 @@ const letterPositions   = require('./letterPositions');
 const takeUntil = require('./takeUntil');
 
 module.exports = {
-
   assertEqual,
   assertArraysEqual,
   assertObjectsEqual,
@@ -33,22 +32,6 @@ module.exports = {
   middle,
   tail,
   takeUntil,
-  without 
+  without
 };
 
-// assertEqual: assertEqual,
-// assertArraysEqual: assertArraysEqual,
-// assertObjectsEqual: assertObjectsEqual,
-// countLetters: countLetters,
-// countOnly:countOnly,
-// eqArrays: eqArrays,
-// eqObjects: eqObjects,
-// findKey: findKey,
-// findKeyByValue: findKeyByValue,
-// flatten: flatten,
-// head: head,
-// letterPositions: letterPositions,
-// middle: middle,
-// tail: tail,
-// takeUntil: takeUntil,
-// without: without
